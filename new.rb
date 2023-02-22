@@ -1,15 +1,13 @@
-class Car 
-    def run(distance)
-        puts "車で#{distance}キロ走ります。"
-    end
+class Car
     
-    def turn(hou)
-        puts "#{hou}に曲がります。"
-    end
+    def self.turn(direction)
+        puts "#{direction}方向に曲がる"
+    end 
 end 
+class Bus < Car
+end 
+bus = Bus.new
 
-car = Car.new
-car.turn("右")
-
-car = Car.new
-car.run(5)
+    bus.turn("右")
+    
+    
